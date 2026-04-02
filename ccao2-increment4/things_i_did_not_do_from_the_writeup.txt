@@ -1,0 +1,3 @@
+to-do (or not)
+- logo on every page with css formatting
+- design guide
