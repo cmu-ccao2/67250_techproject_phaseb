@@ -9,6 +9,34 @@
   line-height: 1.5;
 }
 
+.container {
+  display: grid; /* Turns this div into a CSS Grid layout */
+  grid-template-areas:   /* Defines the layout structure */
+    'header'
+    'nav_bar'
+    'main'
+    'footer';
+}
+
+/* Places each element into the correct area of the grid */
+.header {
+  grid-area: header; 
+  display: flex; 
+  justify-content: center;
+}
+.nav_bar {
+  grid-area: nav_bar; 
+  display: flex; /* Uses Flexbox for internal layout */
+  justify-content: center;  
+}
+
+.main {
+  grid-area: main; 
+}
+.footer {
+  grid-area: footer;
+}
+
 nav a {
   text-decoration: none;
   color: #f5f5f7;

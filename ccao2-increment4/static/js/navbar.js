@@ -1,5 +1,5 @@
 const navContent = `
-<nav> 
+<nav class="nav_bar">
   <a href="index.html">Home</a>
   <a href="1.html">1</a>
   <a href="2.html">2</a>
