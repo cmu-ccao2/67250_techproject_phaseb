@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats</title>
+  <meta name="author" content="ccao2">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="67-272 webdev project">
+  <link rel="stylesheet" href="./static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<div class="nonhome-layout">
+  <div id="navbar-placeholder"></div>
+    <script src="./static/js/navbar.js"></script>
+
+  <header class="header">
+    <h2>Stats</h2>
+  </header>
+
+  <main class="stats-page-container"> 
+    <div class="global-stats">
+      <h3>NA Competitive Pick Rate:</h3>
+      <p id="jpc-pickrate">Loading...</p>
+
+      <h3>NA Competitive Win Rate:</h3>
+      <p id="jpc-winrate">Loading...</p>
+    </div>
+
+    <script src="./static/js/statsGlobalAPI.js"></script>
+
+    <div class="player-stats">
+      <h1>try your stats</h1>
+      <label for="blizzid">Enter Name:</label>
+      <input type="text" id="blizzid" name="blizzid" placeholder="BlizzardID here">
+
+      <h3>Jetpack Cat Play Time:</h3>
+      <p id="your-playtime">Loading...</p>
+
+      <h3>Jetpack Cat Win Rate:</h3>
+      <p id="your-winrate">Loading...</p>
+
+      <h3>Jetpack Cat Eliminations per 10 minutes:</h3>
+      <p id="your-kp10">Loading...</p>
+
+      <h3>Jetpack Cat Deaths per 10 minutes:</h3>
+      <p id="your-dp10">Loading...</p>
+
+      <h3>Jetpack Cat Healing per 10 minutes:</h3>
+      <p id="your-hp10">Loading...</p>
+
+      <h3>Jetpack Cat Boops:</h3>
+      <p id="your-enviromentals">Loading...</p>
+
+
+      <h3>Kiriko Time Played:</h3>
+      <p id="kiriko-time">Loading...</p>
+        <script src="./static/js/overfastAPI.js"></script>
+    </div>
+  </main>
+
+  <footer id="footer-placeholder"></footer>
+    <script src="./static/js/footer.js"></script>
+</div>
+</html>

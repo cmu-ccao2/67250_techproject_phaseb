@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <meta name="author" content="ccao2">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="67-272 webdev project">
+  <link rel="stylesheet" href="./static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="nonhome-layout">
+  <div id="navbar-placeholder"></div>
+    <script src="./static/js/navbar.js"></script>
+
+  <header class="header">
+    <h2>Jetpack Cat Videos</h2>
+  </header>
+
+  <main class="video-page-container"> 
+    <div class="main-video-container">
+      <iframe id="featured-video" src="https://www.youtube.com/embed/xUe2v38VOUw?si=aqiNBzr4k71lNh7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- column of 3 videos -->
+    <div class="video-sidebar">
+      <div class="sidebar-item">
+        <iframe src="https://www.youtube.com/embed/DLjrJz1cVP4?si=J5fcpGjEhBsqkPtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="click-overlay"></div> <!-- Invisible layer to catch clicks -->
+      </div>
+      <div class="sidebar-item">
+        <iframe src="https://www.youtube.com/embed/fYgT6nGOf9M?si=yO_kIORHvehtIZIj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="click-overlay"></div>
+      </div>
+      <div class="sidebar-item">
+        <iframe src="https://www.youtube.com/embed/Asfxkoqsltc?si=fGzEMzaUPN4kL-9-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="click-overlay"></div>
+      </div>
+    </div>
+    <script src="./static/js/videos-click.js"></script>
+  </main>
+  <footer id="footer-placeholder"></footer>
+    <script src="./static/js/footer.js"></script>
+</div>
+<body>
+  
+</body>
+</html>
